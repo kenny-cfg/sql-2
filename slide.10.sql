@@ -21,4 +21,12 @@ create table orders (
   order_id varchar(10) primary key,
   customer_id integer not null,
   foreign key (customer_id) references customers(customer_id)
+);
+
+create table order_details (
+  order_id varchar(10) not null,
+  product_id varchar(10) not null,
+  quantity integer not null,
+  foreign key (order_id) references orders(order_id),
+  foreign key (product_id) references products(product_id)
 )

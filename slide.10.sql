@@ -11,6 +11,10 @@ create table customers (
   customer_telephone_number varchar(20) not null
 );
 
+insert customers (customer_id, customer_name, customer_address, customer_telephone_number)
+values (25, 'Alex Wilson', '1318 Scenic Avenue, Bothel', '888-555-0142');
+
+
 create table products (
   product_id varchar(10) primary key,
   product_name varchar(200) not null,

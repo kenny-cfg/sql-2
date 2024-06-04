@@ -12,7 +12,9 @@ create table customers (
 );
 
 insert customers (customer_id, customer_name, customer_address, customer_telephone_number)
-values (25, 'Alex Wilson', '1318 Scenic Avenue, Bothel', '888-555-0142');
+values
+  (25, 'Alex Wilson', '1318 Scenic Avenue, Bothel', '888-555-0142'),
+  (45, 'Poo bum', '999 Letsbe Avenue', '123-456-7890');
 
 
 create table products (

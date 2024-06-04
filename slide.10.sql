@@ -1,3 +1,5 @@
+drop database if exists customers;
+
 create database customers;
 
 use customers;
